@@ -1,0 +1,185 @@
+/* TAG */
+html {
+    font-family: 'Arimo', sans-serif;
+    font-size: 10px;
+}
+html,
+body,
+.container {
+    height: 100%; 
+}
+
+/* CLASS */
+.container {
+    position: relative;
+    min-height: 725px; 
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* TABLE */
+.pricelist {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-spacing: 0;
+    border: 22px solid #364664;
+    color:  #484848; 
+    text-align: center;
+    text-transform: uppercase;
+}
+.main_col {
+    width: 198px;
+}
+.content_col {
+    width: 157px;
+}
+
+/* TABLE HEAD */
+.plan_features {
+    height: 112px;
+    background-color: #fafafa;
+}
+.plan_features p {
+    color:  #484848;
+    font-size: 2rem;  
+    font-weight: 700;
+}
+.plan_features th:first-of-type p:first-of-type {
+    font-size: 1.4rem;
+    margin-bottom: 3px;
+}
+.plan_features i {
+    margin-bottom: 5px;
+    color: #848484;
+}
+
+/* TABLE BODY */
+tbody tr {
+    height: 166px;      
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.plan {
+    color: #ffffff;
+    font-weight: 700;
+}
+.plan h2 {
+    font-size: 2.4rem;
+    margin-bottom: 5px;
+}
+.plan p {
+    font-size: 3.6rem;
+    margin-bottom: 15px;
+}
+.plan p span {
+    font-size: 1.8rem;
+    line-height: 30px;
+    vertical-align: top;
+}
+.plan p span:last-of-type {
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+.plan_std {
+    background-color: #89c331;
+}
+.plan_ult {
+    background-color: #f04a56;
+}
+.plan_prem {
+    background-color: #20807c;
+}
+
+/* Button */
+.btn {
+    display: block;
+    height: 41px;
+    width: 144px;
+    margin: 0 auto;
+    padding: 12px 0;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #414141 36px, #343434 5px);
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+.btn:hover {
+    color: coral;
+}    
+
+/* Content */
+.feature_storage p::after {
+    display: block;
+    margin-top: 5px;
+    content: "storage";
+}
+.feature_bandwidth p::after {
+    display: block;
+    margin-top: 5px;
+    content: "bandwidth";
+}
+.feature_email p::after {
+    display: block;
+    margin-top: 5px;
+    content: "emails";
+}
+.feature_support p::after {
+    display: block;
+    margin-top: 5px;
+    content: "support";
+}
+.feature_products p::after {
+    display: block;
+    margin-top: 5px;
+    content: "products";
+}
+.feature_users p::after {
+    display: block;
+    margin-top: 5px;
+    content: "users";
+}
+
+/* Column coloring */
+.plan_features th:nth-child(2n+2),
+tbody td:nth-child(2n+2) {
+    background-color: #e3e3e3;
+}
+.plan_features th:nth-child(2n+3),
+tbody td:nth-child(2n+3) {
+    background-color: #f2f2f2;
+}
+
+/* Shadows */
+.plan_features th:nth-child(n+2),
+tbody td {
+    box-shadow: 0px -2px 4px -2px rgba(0, 0, 0, 0.27) inset;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/arimo-v11-latin-regular.eot'); 
+    src: local('Arimo Regular'), local('Arimo-Regular'),
+         url('../fonts/arimo-v11-latin-regular.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/arimo-v11-latin-regular.woff2') format('woff2'), 
+         url('../fonts/arimo-v11-latin-regular.woff') format('woff'),
+         url('../fonts/arimo-v11-latin-regular.ttf') format('truetype'), 
+         url('../fonts/arimo-v11-latin-regular.svg#Arimo') format('svg'); 
+  }  
+  @font-face {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/arimo-v11-latin-700.eot');
+    src: local('Arimo Bold'), local('Arimo-Bold'),
+         url('../fonts/arimo-v11-latin-700.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/arimo-v11-latin-700.woff2') format('woff2'),
+         url('../fonts/arimo-v11-latin-700.woff') format('woff'),
+         url('../fonts/arimo-v11-latin-700.ttf') format('truetype'),
+         url('../fonts/arimo-v11-latin-700.svg#Arimo') format('svg');
+  }
